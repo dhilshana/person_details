@@ -44,7 +44,7 @@ class LocalDatabase{
   }
 
 
-  Future<void> deleteValue(String name, int age, String place, String email) async{
+  Future<void> deleteValue({required String name,required int age,required String place,required String email}) async{
     await database?.delete(
       'person',
       where: 'name =? AND age =? AND place =? AND email =?',
@@ -52,7 +52,7 @@ class LocalDatabase{
       );
   }
 
-  Future<void> updateValue(String name,int age,String place, String email,Map<String, dynamic> newValues,) async{
+  Future<void> updateValue({required String name,required int age,required String place,required String email,required Map<String, dynamic> newValues,}) async{
     await database?.update(
       'person', 
       newValues,
