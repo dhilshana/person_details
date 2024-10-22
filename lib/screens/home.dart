@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
-import 'package:sqf_lite/main.dart';
 import 'package:sqf_lite/screens/detailScreen.dart';
 import 'package:sqf_lite/services/local_database.dart';
 import 'package:sqf_lite/services/provider.dart';
